@@ -9,11 +9,6 @@
     TextMate can be found at: http://macromates.com/
 */
 
-* {
-	color: rgba(248, 248, 242, 1.0);
-	background-color: rgba(39, 40, 34, 1.0);
-}
-
 @base {
 	background-color: rgba(39, 40, 34, 1.0);
 	color: rgba(248, 248, 242, 1.0);

@@ -29,6 +29,7 @@ php string delimiter,
 }
 
 * tag entity.name,
+tag > name,
 css > property-name,
 * php keyword,
 operator {

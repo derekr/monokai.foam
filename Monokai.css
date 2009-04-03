@@ -1,6 +1,6 @@
 /*
     @theme Monokai
-    @override-placeholders html, xml, css, sourcecode.js, php
+    @override-placeholders html, xml, css, sourcecode.js, sourcecode.php
     @author Derek Reynolds
 
     This is a port of the Monokai theme for TextMate.
@@ -8,17 +8,52 @@
     TextMate can be found at: http://macromates.com/
 */
 
+* {
+	color: rgba(248, 248, 242, 1.0);
+	background-color: rgba(39, 40, 34, 1.0);
+}
+
 @base {
-	background-color: #272822;
-	color: #F8F8F2;
-	selection-background-color: #49483E;
-	insertion-point-color: #F8F8F0;
+	background-color: rgba(39, 40, 34, 1.0);
+	color: rgba(248, 248, 242, 1.0);
+	selection-background-color: rgba(73, 72, 62, 1.0);
+	insertion-point-color: rgba(248, 248, 242, 1.0);;
 }
 
-string {
-	color: #E6DB74;
+string,
+* text.html > tag.html > attribute-value.string.quoted,
+php string delimiter,
+* css > property-value {
+	color: rgba(230, 219, 116, 1.0);
 }
 
-comment {
-    color: #75715E;
+* tag entity.name,
+css > property-name,
+* php keyword,
+operator {
+	color: rgba(249, 38, 114, 1.0);
+	background-color: rgba(0,0,0,0.0);
+}
+
+* php keyword.definition,
+* php variable,
+* php literal.keyword {
+	color: rgba(96, 217, 238, 1.0);
+	font-style: italic;
+}
+
+* comment,
+* php comment content, 
+comment url, 
+comment override-marker,
+* > comment punctuation,
+tag.doctype {
+	color: rgba(117, 113, 94, 1.0);
+}
+
+* php function name, 
+* php identifier.function,
+attribute-name, 
+* selector.css {
+	color: rgba(168, 225, 36, 1.0);
 }
